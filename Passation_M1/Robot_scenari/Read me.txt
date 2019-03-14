@@ -1,0 +1,17 @@
+Le dossier Robot_scenari contient les codes correspondant à:
+
+	la version démonstration de la compétition (sur 3 tours) avec cablage d'erreur ( à tester ) 
+
+	le code du lidar sans cablage d'erreur ( non fonctionnel car faut cabler les erreur dans tout les VI, suivre exemple)
+
+	l'exemple de temps de la théorie temps réel à implémenter
+
+
+le VI selecteur premet le lancement de différents programmes suivant celui selectionné grâce au bouton
+Faire les modifications nécessaire pour qu'il fonctionne
+
+
+Pour lancer le code du lidar: ouvrir Lidar_Machine_etat
+			lancer le programme en mode pas a pas (ampoule)
+			attendre que changement de l'etat pour passer en mode continu (risque de blocage dans Lidar_obstacle)
+			Si bloquer arreter le lidar avec bouton stop de State_Machine_Lidar et relancer le programme precedent	

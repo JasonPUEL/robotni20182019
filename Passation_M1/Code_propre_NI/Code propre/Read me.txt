@@ -1,0 +1,7 @@
+Dans le dossier Code_propre_NI vous trouverez le code correspondant à la compétition NI
+
+Parcours en 1 tour
+
+Erreur deja cablés
+
+Manque uniquement le temps réel dont l'exemple se trouve dans Robot_scenari

@@ -1,0 +1,15 @@
+Ce dossier contient la version de demonstration fonctionnel du robot qui a été utilisé pour la présentation
+de projet finale
+
+
+Elle contient:
+
+	Le code de démonstration fonctionnel sur ( 3 tours ) sans cablage des erreur
+
+	Le code du lidar fonctionnel sans cablage des erreur
+
+	Le théorie sur le temps réel
+
+
+Ce dossier sert uniquement de backup, toutes les modifications a apportés doivent se faire sur
+les dossiers robot_scenari et Code_propre_NI
