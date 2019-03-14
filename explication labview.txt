@@ -1,0 +1,47 @@
+modules:
+	temps réel
+	myrio
+	
+pour transferer le programme labview
+clique droit - connect
+
+créer un executable
+build specification - new - real time application
+selectionner le vi de startup
+build - ok
+
+set as startup pour lancer au demarrage
+
+ultrason jamais utilisé
+tempo seconde à ne pas utiliser car boucle while 
+
+créer un programme pour calculer la distance lorsque le lanceur est en mode distance
+
+lancemebt du robot:
+après avoir tout initialiser et installer, appuyer sur le bouton pour lancer le robot
+
+temps réel:
+	boucle 1: etat à faire
+	boucle 2: temporisation à faire (acions à faire)
+	boucle 3: verification si le temps a été récupéré
+	
+	action 1 sert à savoir où continuer
+	
+	pour rendre temps réel les vi (trieur par ex) il faut quitter le vi et sauvgarder l'état actuelle pour le reprendre à la prochaine iteration de la boucle cadencée
+	
+	Lidar:
+	state machine lidar: decodage et communication avec le lidar	/ récupération des datas
+		tableau: 	ligne 1: angle
+					ligne 2: distance
+	
+	programme global du lidar:
+		boucle cadencé: rend exploitable les datas 		- tableau de 0 à 359 qui permet de savoir si on a des datas valide ou pas.
+		
+	variable partagé dans lidar library
+		networkpublish		selectionner datas
+		enable fifo
+				permet la communication entre boucle cadencé et boucle ordinaire.
+				
+		zone 3 bis: tout-zone morte à distance l3
+	
+	lidar selecteur: selectionne l'action à faire
