@@ -1,0 +1,47 @@
+* Comment le faire marcher?
+
+Brancher le cable de la camera: -Le bout du cable doit être branché sue le port au centre du raspberry, côté bleu du cable tourner vers le coté blanc du port. 
+				-Soulevé la partie blanche pour inséré le cable. 
+				-Puis rabaisser pour vérouiller le cable.
+Brancher l'ampli au raspberry, via la prise jack.
+Alimenter le raspberry via le port micro-USB. Alimentation en 5v.
+Alimenter l'ampli en 12V ( 5V min, 14V max).
+
+Le message est jouer automatiquement au démarage.
+
+* Comment modifier le text lu?
+Se connecter au raspberry: Activer votre wifi et connecter au réseau du raspberry
+			   Pour linux, dans un terminal, envoyer la commande: ssh pi@"addresse IP du raspberry".
+			   Pour Putty, écrire "l'addresse IP du raspberry", puis selectionner ssh, puis cliquer sur Open. Le nom d'utilisateur est pi.
+			   Le mot de passe est: raspberry
+
+Au lancement, faire un ctr-C pour reprendre la main sur le raspberry.
+Le fichier est à la racine. Il s'appelle text.txt. Utilisez la commande "nano text.txt" pour le modifier.
+
+* Les caractéristiques actuelles du programme.
+version du raspberry: Raspberry Pi 3, model B, V1.2
+OS:
+bibliotheque: espeak 
+Le programme lit le fichier text ligne après ligne, avec 28 secondes d'écart entre chaque ligne.
+Linux version 4.4.50-v7+ (dc4@dc4-XPS13-9333) (gcc version 4.9.3 (crosstool-NG crosstool-ng-1.22.0-88-g8460611) ) #970 SMP Mon Feb 20 19:18:29 GMT 2017
+* Liste composant
+-Raspberry: Raspberry Pi 3, model B, V1.2
+-Camera
+-Ampli
+-Haut-parleur
+-Alimentation (batterie?) pour ampli et une autre pour raspberry		!!! ne pas alimenter la raspberry à l'aide du port USB d'un ordinateur.
+
+* guide Camera Raspberry
+pour afficher le flux vidéo généré par la camera, il faut:
+- être sur le même reseau internet que la raspberry
+- ouvrir VLC sur le periphérique devant afficher le flux.
+- média/ouvrir un flux reseau puis taper: http://[addresse_ip_du_raspberry]:8161		exemple: http://192.168.43.215:8161
+
+en cas d'erreur, pensez à vérifier que la raspberry et le PC soient sur le même réseau.
+!!! ne pas utiliser le reseau WIFISEN car le port 8161 y est bloqué
+l'addresse IP du raspberry s'afiche sur l'écran LCD, si aucune valeur n'est affiché, alors la raspberry n'est connéctée sur aucun réseau, il faut alors lui brancher un écran, un clavier et une souris afin de lui configuré un nouveau reseau wifi.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+la camera utilise raspivid pour générer le flux vidéo.
+le lancement automatique de la camera est définie dans ~/.bashrc et celui du haut parleur dans /etc/init.d/boucle_haut_parleur
+
+/etc/init.d/boucle_haut_parleur lance au démarrage le programme ~/boucle_haut_parleur qui lit les phrases contenues dans le fichier ~/text.txt

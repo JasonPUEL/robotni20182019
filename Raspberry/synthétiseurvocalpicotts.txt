@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo
+echo "This script will install libttspico in a very simple manner"
+echo " "
+echo "It only requires a internet connection"
+echo " "
+read -p "Press any key to continue..." -n1 -s
+echo
+echo
+
+
+#echo "###Ajour du nouuveau depot###">>/etc/apt/sources.liste
+#echo "deb http://archive.raspbian.org/raspbian wheezy main contrib non-free rpi">>/etc/apt/sources.liste
+#echo "deb-src http://archive.raspbian.org/raspbian wheezy main contrib non-free rpi">>/etc/apt/sources.liste
+apt-get update
+apt-get install libttspico-utils
+
+pico2wave -l fr-FR  -w   ~/Desktop/helloworld.wav    "Le logiciel a bien été installer"
+aplay ~/Desktop/helloworld.wav 

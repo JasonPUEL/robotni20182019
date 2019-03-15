@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#débugage: test existance
+if [  -e ~/text.txt  ]
+then
+
+	#echo "OK"
+	while read line
+	do
+	#echo -e "$line\n"
+	espeak -vfr+f1 -p30 -s100 --stdout "/$line" | paplay
+	done < ~/text.txt
+
+else
+	#echo "erreur fichier non trouver"
+fi
