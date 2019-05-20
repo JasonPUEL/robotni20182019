@@ -1227,6 +1227,110 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-molex" urn="urn:adsk.eagle:library:165">
+<description>&lt;b&gt;Molex Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="22-23-2031" library_version="1">
+<description>.100" (2.54mm) Center Header - 3 Pin</description>
+<wire x1="-3.81" y1="3.175" x2="3.81" y2="3.175" width="0.254" layer="21"/>
+<wire x1="3.81" y1="3.175" x2="3.81" y2="1.27" width="0.254" layer="21"/>
+<wire x1="3.81" y1="1.27" x2="3.81" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="3.81" y1="-3.175" x2="-3.81" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="-3.175" x2="-3.81" y2="1.27" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="3.175" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="1.27" x2="3.81" y2="1.27" width="0.254" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="1" shape="long" rot="R90"/>
+<text x="-3.81" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="22-23-2041" library_version="1">
+<description>.100" (2.54mm) Center Header - 4 Pin</description>
+<wire x1="-5.08" y1="3.175" x2="5.08" y2="3.175" width="0.254" layer="21"/>
+<wire x1="5.08" y1="3.175" x2="5.08" y2="1.27" width="0.254" layer="21"/>
+<wire x1="5.08" y1="1.27" x2="5.08" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="5.08" y1="-3.175" x2="-5.08" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="-5.08" y1="-3.175" x2="-5.08" y2="1.27" width="0.254" layer="21"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="3.175" width="0.254" layer="21"/>
+<wire x1="-5.08" y1="1.27" x2="5.08" y2="1.27" width="0.254" layer="21"/>
+<pad name="1" x="-3.81" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="2" x="-1.27" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="3" x="1.27" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="4" x="3.81" y="0" drill="1" shape="long" rot="R90"/>
+<text x="-5.08" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<text x="-5.08" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="MV" library_version="1">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<text x="-0.762" y="1.397" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="M" library_version="1">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="22-23-2031" prefix="X" library_version="1">
+<description>.100" (2.54mm) Center Header - 3 Pin</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="M" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="22-23-2031">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="MOLEX" constant="no"/>
+<attribute name="MPN" value="22-23-2031" constant="no"/>
+<attribute name="OC_FARNELL" value="1462950" constant="no"/>
+<attribute name="OC_NEWARK" value="30C0862" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="22-23-2041" prefix="X" library_version="1">
+<description>.100" (2.54mm) Center Header - 4 Pin</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="M" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="M" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="22-23-2041">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="MOLEX" constant="no"/>
+<attribute name="MPN" value="22-23-2041" constant="no"/>
+<attribute name="OC_FARNELL" value="1462920" constant="no"/>
+<attribute name="OC_NEWARK" value="38C0355" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1239,8 +1343,8 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <parts>
 <part name="MYRIO_PORT_A" library="con-panduit" deviceset="057-034-" device="1"/>
 <part name="MYRIO_PORT_B" library="con-panduit" deviceset="057-034-" device="1"/>
-<part name="R1" library="isenproject" deviceset="R" device="1/4W" value="100K"/>
-<part name="R2" library="isenproject" deviceset="R" device="1/4W" value="220"/>
+<part name="R1" library="isenproject" deviceset="R" device="1/4W" value="15K"/>
+<part name="R2" library="isenproject" deviceset="R" device="1/4W" value="180"/>
 <part name="SUPPLY2" library="isenproject" deviceset="+5V" device=""/>
 <part name="X6" library="isenproject" deviceset="KK-156-2" device=""/>
 <part name="SUPPLY7" library="isenproject" deviceset="GND" device=""/>
@@ -1251,7 +1355,6 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <part name="SUPPLY13" library="isenproject" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="isenproject" deviceset="+5V" device=""/>
 <part name="SUPPLY18" library="isenproject" deviceset="GND" device=""/>
-<part name="X7" library="con-panduit" deviceset="057-010-" device="1"/>
 <part name="TRIEUR_PWM" library="con-panduit" deviceset="057-006-" device="1"/>
 <part name="ROUE" library="con-panduit" deviceset="057-014-" device="1"/>
 <part name="LANCEUR" library="con-panduit" deviceset="057-006-" device="1"/>
@@ -1286,18 +1389,21 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <part name="PWM_LANCEUR_MAN" library="connecteurs_males" deviceset="MA01-1" device=""/>
 <part name="SUPPLY27" library="isenproject" deviceset="GND" device=""/>
 <part name="SUPPLY28" library="isenproject" deviceset="GND" device=""/>
+<part name="SUPPLY29" library="isenproject" deviceset="GND" device=""/>
+<part name="X1" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2031" device=""/>
+<part name="X2" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2041" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="200.66" y="114.3" size="3.81" layer="91">Roue</text>
-<text x="185.42" y="55.88" size="3.81" layer="91" rot="MR0">Suiveur</text>
+<text x="149.86" y="114.3" size="3.81" layer="91">Roue</text>
+<text x="160.02" y="53.34" size="3.81" layer="91" rot="MR0">Suiveur</text>
 <text x="-50.8" y="119.38" size="3.81" layer="91" rot="R180">PORT A</text>
 <text x="71.12" y="119.38" size="3.81" layer="91" rot="R180">PORT B</text>
 <text x="15.24" y="187.96" size="3.81" layer="91" rot="R180">LANCEUR</text>
 <text x="106.68" y="187.96" size="3.81" layer="91" rot="R180">Trieur</text>
-<text x="35.56" y="0" size="3.81" layer="91">ALIM +5V</text>
-<text x="223.52" y="55.88" size="3.81" layer="91" rot="MR0">Bras</text>
+<text x="0" y="0" size="3.81" layer="91">ALIM +5V</text>
+<text x="218.44" y="53.34" size="3.81" layer="91" rot="MR0">Bras</text>
 <text x="83.82" y="137.16" size="3.81" layer="91" rot="R180">AJOUTER UNE SORTIE VERS LE PORT C</text>
 <text x="-111.76" y="187.96" size="3.81" layer="91" rot="R180">Lidar</text>
 <wire x1="-10.16" y1="190.5" x2="-10.16" y2="132.08" width="0.1524" layer="97" style="longdash"/>
@@ -1316,6 +1422,28 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <wire x1="-129.54" y1="17.78" x2="134.62" y2="17.78" width="0.1524" layer="97" style="longdash"/>
 <wire x1="134.62" y1="17.78" x2="134.62" y2="121.92" width="0.1524" layer="97" style="longdash"/>
 <wire x1="134.62" y1="121.92" x2="-129.54" y2="121.92" width="0.1524" layer="97" style="longdash"/>
+<wire x1="139.7" y1="60.96" x2="200.66" y2="60.96" width="0.1524" layer="97" style="longdash"/>
+<wire x1="203.2" y1="60.96" x2="251.46" y2="60.96" width="0.1524" layer="97" style="longdash"/>
+<wire x1="251.46" y1="60.96" x2="251.46" y2="17.78" width="0.1524" layer="97" style="longdash"/>
+<wire x1="251.46" y1="17.78" x2="203.2" y2="17.78" width="0.1524" layer="97" style="longdash"/>
+<wire x1="200.66" y1="17.78" x2="139.7" y2="17.78" width="0.1524" layer="97" style="longdash"/>
+<wire x1="139.7" y1="17.78" x2="139.7" y2="60.96" width="0.1524" layer="97" style="longdash"/>
+<text x="157.48" y="66.04" size="1.778" layer="97">ATTENTION : Les pins sont placées en top view. 
+Dans la réalité les pins sont connectées au reste du 
+robot par le dessous</text>
+<wire x1="200.66" y1="60.96" x2="200.66" y2="17.78" width="0.1524" layer="97" style="longdash"/>
+<wire x1="139.7" y1="63.5" x2="251.46" y2="63.5" width="0.1524" layer="97" style="longdash"/>
+<wire x1="251.46" y1="63.5" x2="251.46" y2="121.92" width="0.1524" layer="97" style="longdash"/>
+<wire x1="251.46" y1="121.92" x2="139.7" y2="121.92" width="0.1524" layer="97" style="longdash"/>
+<wire x1="139.7" y1="121.92" x2="139.7" y2="63.5" width="0.1524" layer="97" style="longdash"/>
+<wire x1="-2.54" y1="-35.56" x2="-2.54" y2="7.62" width="0.1524" layer="97" style="longdash"/>
+<wire x1="-2.54" y1="7.62" x2="60.96" y2="7.62" width="0.1524" layer="97" style="longdash"/>
+<wire x1="60.96" y1="7.62" x2="60.96" y2="-35.56" width="0.1524" layer="97" style="longdash"/>
+<wire x1="60.96" y1="-35.56" x2="-2.54" y2="-35.56" width="0.1524" layer="97" style="longdash"/>
+<text x="-121.92" y="0" size="1.778" layer="97">Les routes de signaux sont tracées en 0,6096 mm = 0,024 Pouce</text>
+<text x="-121.92" y="0" size="1.778" layer="97">Les routes de signaux sont tracées en 0,6096 mm = 0,024 Pouce</text>
+<text x="-121.92" y="-7.62" size="1.778" layer="97">Les VIA: Diameter=auto; Drill= 0,6096</text>
+<wire x1="203.2" y1="60.96" x2="203.2" y2="17.78" width="0.1524" layer="97" style="longdash"/>
 </plain>
 <instances>
 <instance part="MYRIO_PORT_A" gate="-1" x="-33.02" y="27.94" smashed="yes" rot="R180">
@@ -1541,8 +1669,8 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <attribute name="NAME" x="48.26" y="-18.542" size="1.524" layer="95"/>
 <attribute name="VALUE" x="44.958" y="-16.383" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY7" gate="GND" x="2.54" y="-20.32" smashed="yes">
-<attribute name="VALUE" x="0.635" y="-23.495" size="1.778" layer="96"/>
+<instance part="SUPPLY7" gate="GND" x="17.78" y="-20.32" smashed="yes">
+<attribute name="VALUE" x="15.875" y="-23.495" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY8" gate="GND" x="111.76" y="58.42" smashed="yes">
 <attribute name="VALUE" x="114.935" y="60.325" size="1.778" layer="96"/>
@@ -1550,8 +1678,8 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <instance part="SUPPLY10" gate="+5V" x="246.38" y="35.56" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="248.285" y="38.735" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="SUPPLY11" gate="GND" x="203.2" y="12.7" smashed="yes">
-<attribute name="VALUE" x="201.295" y="9.525" size="1.778" layer="96"/>
+<instance part="SUPPLY11" gate="GND" x="165.1" y="22.86" smashed="yes">
+<attribute name="VALUE" x="163.195" y="19.685" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY12" gate="+5V" x="-2.54" y="170.18" smashed="yes">
 <attribute name="VALUE" x="-4.445" y="173.355" size="1.778" layer="96"/>
@@ -1559,42 +1687,11 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <instance part="SUPPLY13" gate="GND" x="22.86" y="144.78" smashed="yes">
 <attribute name="VALUE" x="20.955" y="141.605" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY17" gate="+5V" x="236.22" y="109.22" smashed="yes">
-<attribute name="VALUE" x="234.315" y="112.395" size="1.778" layer="96"/>
+<instance part="SUPPLY17" gate="+5V" x="231.14" y="83.82" smashed="yes" rot="R270">
+<attribute name="VALUE" x="234.315" y="85.725" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="SUPPLY18" gate="GND" x="236.22" y="73.66" smashed="yes">
-<attribute name="VALUE" x="234.315" y="70.485" size="1.778" layer="96"/>
-</instance>
-<instance part="X7" gate="-1" x="210.82" y="43.18" smashed="yes" rot="MR0">
-<attribute name="NAME" x="209.804" y="42.418" size="1.524" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="213.36" y="45.085" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="X7" gate="-2" x="193.04" y="43.18" smashed="yes">
-<attribute name="NAME" x="194.056" y="42.418" size="1.524" layer="95"/>
-</instance>
-<instance part="X7" gate="-3" x="210.82" y="38.1" smashed="yes" rot="MR0">
-<attribute name="NAME" x="209.804" y="37.338" size="1.524" layer="95" rot="MR0"/>
-</instance>
-<instance part="X7" gate="-4" x="193.04" y="38.1" smashed="yes">
-<attribute name="NAME" x="194.056" y="37.338" size="1.524" layer="95"/>
-</instance>
-<instance part="X7" gate="-5" x="210.82" y="33.02" smashed="yes" rot="MR0">
-<attribute name="NAME" x="209.804" y="32.258" size="1.524" layer="95" rot="MR0"/>
-</instance>
-<instance part="X7" gate="-6" x="193.04" y="33.02" smashed="yes">
-<attribute name="NAME" x="194.056" y="32.258" size="1.524" layer="95"/>
-</instance>
-<instance part="X7" gate="-7" x="210.82" y="27.94" smashed="yes" rot="MR0">
-<attribute name="NAME" x="209.804" y="27.178" size="1.524" layer="95" rot="MR0"/>
-</instance>
-<instance part="X7" gate="-8" x="193.04" y="27.94" smashed="yes">
-<attribute name="NAME" x="194.056" y="27.178" size="1.524" layer="95"/>
-</instance>
-<instance part="X7" gate="-9" x="210.82" y="22.86" smashed="yes" rot="MR0">
-<attribute name="NAME" x="209.804" y="22.098" size="1.524" layer="95" rot="MR0"/>
-</instance>
-<instance part="X7" gate="-10" x="193.04" y="22.86" smashed="yes">
-<attribute name="NAME" x="194.056" y="22.098" size="1.524" layer="95"/>
+<instance part="SUPPLY18" gate="GND" x="241.3" y="86.36" smashed="yes">
+<attribute name="VALUE" x="239.395" y="83.185" size="1.778" layer="96"/>
 </instance>
 <instance part="TRIEUR_PWM" gate="-1" x="127" y="167.64" smashed="yes">
 <attribute name="NAME" x="120.396" y="164.338" size="1.524" layer="95"/>
@@ -1615,48 +1712,48 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <instance part="TRIEUR_PWM" gate="-6" x="144.78" y="157.48" smashed="yes" rot="MR0">
 <attribute name="NAME" x="151.384" y="154.178" size="1.524" layer="95" rot="MR0"/>
 </instance>
-<instance part="ROUE" gate="-1" x="193.04" y="106.68" smashed="yes">
-<attribute name="NAME" x="194.056" y="105.918" size="1.524" layer="95"/>
-<attribute name="VALUE" x="190.5" y="108.585" size="1.778" layer="96"/>
+<instance part="ROUE" gate="-1" x="198.12" y="109.22" smashed="yes">
+<attribute name="NAME" x="199.136" y="108.458" size="1.524" layer="95"/>
+<attribute name="VALUE" x="195.58" y="111.125" size="1.778" layer="96"/>
 </instance>
-<instance part="ROUE" gate="-2" x="213.36" y="106.68" smashed="yes" rot="MR0">
-<attribute name="NAME" x="212.344" y="105.918" size="1.524" layer="95" rot="MR0"/>
+<instance part="ROUE" gate="-2" x="218.44" y="109.22" smashed="yes" rot="MR0">
+<attribute name="NAME" x="217.424" y="108.458" size="1.524" layer="95" rot="MR0"/>
 </instance>
-<instance part="ROUE" gate="-3" x="193.04" y="101.6" smashed="yes">
-<attribute name="NAME" x="194.056" y="100.838" size="1.524" layer="95"/>
+<instance part="ROUE" gate="-3" x="198.12" y="104.14" smashed="yes">
+<attribute name="NAME" x="199.136" y="103.378" size="1.524" layer="95"/>
 </instance>
-<instance part="ROUE" gate="-4" x="213.36" y="101.6" smashed="yes" rot="MR0">
-<attribute name="NAME" x="212.344" y="100.838" size="1.524" layer="95" rot="MR0"/>
+<instance part="ROUE" gate="-4" x="218.44" y="104.14" smashed="yes" rot="MR0">
+<attribute name="NAME" x="217.424" y="103.378" size="1.524" layer="95" rot="MR0"/>
 </instance>
-<instance part="ROUE" gate="-5" x="193.04" y="96.52" smashed="yes">
-<attribute name="NAME" x="194.056" y="95.758" size="1.524" layer="95"/>
+<instance part="ROUE" gate="-5" x="198.12" y="99.06" smashed="yes">
+<attribute name="NAME" x="199.136" y="98.298" size="1.524" layer="95"/>
 </instance>
-<instance part="ROUE" gate="-6" x="213.36" y="96.52" smashed="yes" rot="MR0">
-<attribute name="NAME" x="212.344" y="95.758" size="1.524" layer="95" rot="MR0"/>
+<instance part="ROUE" gate="-6" x="218.44" y="99.06" smashed="yes" rot="MR0">
+<attribute name="NAME" x="217.424" y="98.298" size="1.524" layer="95" rot="MR0"/>
 </instance>
-<instance part="ROUE" gate="-7" x="193.04" y="91.44" smashed="yes">
-<attribute name="NAME" x="194.056" y="90.678" size="1.524" layer="95"/>
+<instance part="ROUE" gate="-7" x="198.12" y="93.98" smashed="yes">
+<attribute name="NAME" x="199.136" y="93.218" size="1.524" layer="95"/>
 </instance>
-<instance part="ROUE" gate="-8" x="213.36" y="91.44" smashed="yes" rot="MR0">
-<attribute name="NAME" x="212.344" y="90.678" size="1.524" layer="95" rot="MR0"/>
+<instance part="ROUE" gate="-8" x="218.44" y="93.98" smashed="yes" rot="MR0">
+<attribute name="NAME" x="217.424" y="93.218" size="1.524" layer="95" rot="MR0"/>
 </instance>
-<instance part="ROUE" gate="-9" x="193.04" y="86.36" smashed="yes">
-<attribute name="NAME" x="194.056" y="85.598" size="1.524" layer="95"/>
+<instance part="ROUE" gate="-9" x="198.12" y="88.9" smashed="yes">
+<attribute name="NAME" x="199.136" y="88.138" size="1.524" layer="95"/>
 </instance>
-<instance part="ROUE" gate="-10" x="213.36" y="86.36" smashed="yes" rot="MR0">
-<attribute name="NAME" x="212.344" y="85.598" size="1.524" layer="95" rot="MR0"/>
+<instance part="ROUE" gate="-10" x="218.44" y="88.9" smashed="yes" rot="MR0">
+<attribute name="NAME" x="217.424" y="88.138" size="1.524" layer="95" rot="MR0"/>
 </instance>
-<instance part="ROUE" gate="-11" x="193.04" y="81.28" smashed="yes">
-<attribute name="NAME" x="194.056" y="80.518" size="1.524" layer="95"/>
+<instance part="ROUE" gate="-11" x="198.12" y="83.82" smashed="yes">
+<attribute name="NAME" x="199.136" y="83.058" size="1.524" layer="95"/>
 </instance>
-<instance part="ROUE" gate="-12" x="213.36" y="81.28" smashed="yes" rot="MR0">
-<attribute name="NAME" x="212.344" y="80.518" size="1.524" layer="95" rot="MR0"/>
+<instance part="ROUE" gate="-12" x="218.44" y="83.82" smashed="yes" rot="MR0">
+<attribute name="NAME" x="217.424" y="83.058" size="1.524" layer="95" rot="MR0"/>
 </instance>
-<instance part="ROUE" gate="-13" x="193.04" y="76.2" smashed="yes">
-<attribute name="NAME" x="194.056" y="75.438" size="1.524" layer="95"/>
+<instance part="ROUE" gate="-13" x="198.12" y="78.74" smashed="yes">
+<attribute name="NAME" x="199.136" y="77.978" size="1.524" layer="95"/>
 </instance>
-<instance part="ROUE" gate="-14" x="213.36" y="76.2" smashed="yes" rot="MR0">
-<attribute name="NAME" x="212.344" y="75.438" size="1.524" layer="95" rot="MR0"/>
+<instance part="ROUE" gate="-14" x="218.44" y="78.74" smashed="yes" rot="MR0">
+<attribute name="NAME" x="217.424" y="77.978" size="1.524" layer="95" rot="MR0"/>
 </instance>
 <instance part="LANCEUR" gate="-1" x="20.32" y="170.18" smashed="yes">
 <attribute name="NAME" x="18.796" y="166.878" size="1.524" layer="95"/>
@@ -1686,33 +1783,33 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <instance part="SUPPLY9" gate="+5V" x="104.14" y="167.64" smashed="yes">
 <attribute name="VALUE" x="102.235" y="170.815" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY3" gate="+5V" x="154.94" y="35.56" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="156.845" y="38.735" size="1.778" layer="96" rot="MR0"/>
+<instance part="SUPPLY3" gate="+5V" x="144.78" y="35.56" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="146.685" y="38.735" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="SUPPLY4" gate="+5V" x="71.12" y="170.18" smashed="yes">
 <attribute name="VALUE" x="69.215" y="173.355" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY6" gate="+5V" x="2.54" y="-10.16" smashed="yes">
-<attribute name="VALUE" x="0.635" y="-6.985" size="1.778" layer="96"/>
+<instance part="SUPPLY6" gate="+5V" x="17.78" y="-10.16" smashed="yes">
+<attribute name="VALUE" x="15.875" y="-6.985" size="1.778" layer="96"/>
 </instance>
-<instance part="5V" gate="-1" x="17.78" y="-25.4" smashed="yes" rot="R270">
-<attribute name="NAME" x="17.018" y="-26.416" size="1.524" layer="95" rot="R270"/>
-<attribute name="VALUE" x="19.685" y="-22.86" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="5V" gate="-2" x="17.78" y="-5.08" smashed="yes" rot="R90">
-<attribute name="NAME" x="18.542" y="-4.064" size="1.524" layer="95" rot="R90"/>
-</instance>
-<instance part="5V" gate="-3" x="22.86" y="-25.4" smashed="yes" rot="MR270">
-<attribute name="NAME" x="23.622" y="-26.416" size="1.524" layer="95" rot="MR270"/>
-</instance>
-<instance part="5V" gate="-4" x="22.86" y="-5.08" smashed="yes" rot="R90">
-<attribute name="NAME" x="23.622" y="-4.064" size="1.524" layer="95" rot="R90"/>
-</instance>
-<instance part="5V" gate="-5" x="27.94" y="-25.4" smashed="yes" rot="R270">
+<instance part="5V" gate="-1" x="27.94" y="-25.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="27.178" y="-26.416" size="1.524" layer="95" rot="R270"/>
+<attribute name="VALUE" x="29.845" y="-22.86" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="5V" gate="-6" x="27.94" y="-5.08" smashed="yes" rot="R90">
+<instance part="5V" gate="-2" x="27.94" y="-5.08" smashed="yes" rot="R90">
 <attribute name="NAME" x="28.702" y="-4.064" size="1.524" layer="95" rot="R90"/>
+</instance>
+<instance part="5V" gate="-3" x="33.02" y="-25.4" smashed="yes" rot="MR270">
+<attribute name="NAME" x="33.782" y="-26.416" size="1.524" layer="95" rot="MR270"/>
+</instance>
+<instance part="5V" gate="-4" x="33.02" y="-5.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="33.782" y="-4.064" size="1.524" layer="95" rot="R90"/>
+</instance>
+<instance part="5V" gate="-5" x="38.1" y="-25.4" smashed="yes" rot="R270">
+<attribute name="NAME" x="37.338" y="-26.416" size="1.524" layer="95" rot="R270"/>
+</instance>
+<instance part="5V" gate="-6" x="38.1" y="-5.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="38.862" y="-4.064" size="1.524" layer="95" rot="R90"/>
 </instance>
 <instance part="LIDAR" gate="-1" x="-83.82" y="170.18" smashed="yes">
 <attribute name="NAME" x="-82.804" y="169.418" size="1.524" layer="95"/>
@@ -1821,6 +1918,19 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <instance part="SUPPLY28" gate="GND" x="-104.14" y="40.64" smashed="yes">
 <attribute name="VALUE" x="-111.125" y="40.005" size="1.778" layer="96"/>
 </instance>
+<instance part="SUPPLY29" gate="GND" x="231.14" y="22.86" smashed="yes">
+<attribute name="VALUE" x="229.235" y="19.685" size="1.778" layer="96"/>
+</instance>
+<instance part="X1" gate="-1" x="215.9" y="38.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="213.36" y="38.862" size="1.524" layer="95" rot="R180"/>
+<attribute name="VALUE" x="221.742" y="41.783" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="X1" gate="-2" x="215.9" y="33.02" rot="R180"/>
+<instance part="X1" gate="-3" x="215.9" y="27.94" rot="R180"/>
+<instance part="X2" gate="-1" x="180.34" y="43.18"/>
+<instance part="X2" gate="-2" x="180.34" y="38.1"/>
+<instance part="X2" gate="-3" x="180.34" y="33.02"/>
+<instance part="X2" gate="-4" x="180.34" y="27.94"/>
 </instances>
 <busses>
 </busses>
@@ -1829,19 +1939,19 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <segment>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
 <pinref part="X6" gate="-2" pin="S"/>
-<wire x1="2.54" y1="-17.78" x2="17.78" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-17.78" x2="27.94" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="5V" gate="-1" pin="S"/>
-<wire x1="17.78" y1="-17.78" x2="22.86" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="-17.78" x2="27.94" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="-17.78" x2="43.18" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="-17.78" x2="17.78" y2="-20.32" width="0.1524" layer="91"/>
-<junction x="17.78" y="-17.78"/>
-<pinref part="5V" gate="-3" pin="S"/>
-<wire x1="22.86" y1="-20.32" x2="22.86" y2="-17.78" width="0.1524" layer="91"/>
-<junction x="22.86" y="-17.78"/>
-<pinref part="5V" gate="-5" pin="S"/>
-<wire x1="27.94" y1="-20.32" x2="27.94" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-17.78" x2="33.02" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-17.78" x2="38.1" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-17.78" x2="43.18" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-17.78" x2="27.94" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="27.94" y="-17.78"/>
+<pinref part="5V" gate="-3" pin="S"/>
+<wire x1="33.02" y1="-20.32" x2="33.02" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="33.02" y="-17.78"/>
+<pinref part="5V" gate="-5" pin="S"/>
+<wire x1="38.1" y1="-20.32" x2="38.1" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="38.1" y="-17.78"/>
 </segment>
 <segment>
 <pinref part="MYRIO_PORT_A" gate="-30" pin="S"/>
@@ -1877,16 +1987,10 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <wire x1="154.94" y1="167.64" x2="149.86" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<wire x1="165.1" y1="27.94" x2="177.8" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="SUPPLY11" gate="GND" pin="GND"/>
-<wire x1="203.2" y1="15.24" x2="175.26" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="15.24" x2="175.26" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="X7" gate="-8" pin="S"/>
-<wire x1="175.26" y1="27.94" x2="187.96" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="X7" gate="-7" pin="S"/>
-<wire x1="215.9" y1="27.94" x2="231.14" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="27.94" x2="231.14" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="15.24" x2="203.2" y2="15.24" width="0.1524" layer="91"/>
-<junction x="203.2" y="15.24"/>
+<wire x1="165.1" y1="25.4" x2="165.1" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-4" pin="S"/>
 </segment>
 <segment>
 <pinref part="LANCEUR" gate="-5" pin="S"/>
@@ -1925,14 +2029,12 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 </segment>
 <segment>
 <pinref part="SUPPLY18" gate="GND" pin="GND"/>
-<wire x1="236.22" y1="76.2" x2="236.22" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="ROUE" gate="-12" pin="S"/>
-<wire x1="218.44" y1="81.28" x2="236.22" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="91.44" x2="236.22" y2="81.28" width="0.1524" layer="91"/>
-<junction x="236.22" y="81.28"/>
-<pinref part="ROUE" gate="-6" pin="S"/>
-<wire x1="236.22" y1="91.44" x2="223.52" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="91.44" x2="218.44" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="104.14" x2="241.3" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="104.14" x2="223.52" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="ROUE" gate="-4" pin="S"/>
+<pinref part="ROUE" gate="-10" pin="S"/>
+<wire x1="223.52" y1="88.9" x2="241.3" y2="88.9" width="0.1524" layer="91"/>
+<junction x="241.3" y="88.9"/>
 </segment>
 <segment>
 <pinref part="SUPPLY19" gate="GND" pin="GND"/>
@@ -1957,11 +2059,14 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <segment>
 <pinref part="SUPPLY21" gate="GND" pin="GND"/>
 <pinref part="MYRIO_PORT_A" gate="-16" pin="S"/>
-<wire x1="-91.44" y1="63.5" x2="-104.14" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G$2" pin="2"/>
+<wire x1="-91.44" y1="63.5" x2="-104.14" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="45.72" x2="-73.66" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-73.66" y1="45.72" x2="-73.66" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="-73.66" y1="63.5" x2="-91.44" y2="63.5" width="0.1524" layer="91"/>
+<junction x="-91.44" y="63.5"/>
+<wire x1="-104.14" y1="63.5" x2="-91.44" y2="63.5" width="0.1524" layer="91" style="longdash"/>
+<junction x="-104.14" y="63.5"/>
 <junction x="-91.44" y="63.5"/>
 </segment>
 <segment>
@@ -2026,11 +2131,37 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 </segment>
 <segment>
 <pinref part="SUPPLY27" gate="GND" pin="GND"/>
-<wire x1="-99.06" y1="53.34" x2="-104.14" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="MYRIO_PORT_A" gate="-12" pin="S"/>
+<wire x1="-91.44" y1="53.34" x2="-93.98" y2="53.34" width="0.1524" layer="91"/>
+<junction x="-91.44" y="53.34"/>
+<pinref part="J5" gate="G$2" pin="4"/>
+<wire x1="-93.98" y1="53.34" x2="-104.14" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="40.64" x2="-78.74" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="40.64" x2="-78.74" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="53.34" x2="-91.44" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="53.34" x2="-93.98" y2="53.34" width="0.1524" layer="91" style="longdash"/>
+<junction x="-104.14" y="53.34"/>
+<junction x="-93.98" y="53.34"/>
 </segment>
 <segment>
 <pinref part="SUPPLY28" gate="GND" pin="GND"/>
-<wire x1="-99.06" y1="43.18" x2="-104.14" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="MYRIO_PORT_A" gate="-8" pin="S"/>
+<wire x1="-91.44" y1="43.18" x2="-93.98" y2="43.18" width="0.1524" layer="91"/>
+<junction x="-91.44" y="43.18"/>
+<wire x1="-93.98" y1="43.18" x2="-104.14" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="43.18" x2="-91.44" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="35.56" x2="-83.82" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="J5" gate="G$2" pin="6"/>
+<wire x1="-68.58" y1="35.56" x2="-83.82" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="43.18" x2="-93.98" y2="43.18" width="0.1524" layer="91" style="longdash"/>
+<junction x="-104.14" y="43.18"/>
+<junction x="-93.98" y="43.18"/>
+</segment>
+<segment>
+<pinref part="SUPPLY29" gate="GND" pin="GND"/>
+<wire x1="231.14" y1="25.4" x2="231.14" y2="27.94" width="0.1524" layer="91" style="longdash"/>
+<wire x1="218.44" y1="27.94" x2="231.14" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-3" pin="S"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -2053,26 +2184,26 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <wire x1="167.64" y1="162.56" x2="167.64" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X7" gate="-6" pin="S"/>
 <pinref part="SUPPLY3" gate="+5V" pin="+5V"/>
-<wire x1="187.96" y1="33.02" x2="154.94" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="33.02" x2="144.78" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-3" pin="S"/>
 </segment>
 <segment>
 <pinref part="X6" gate="-1" pin="S"/>
 <pinref part="SUPPLY6" gate="+5V" pin="+5V"/>
-<wire x1="43.18" y1="-12.7" x2="27.94" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-12.7" x2="38.1" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="5V" gate="-4" pin="S"/>
-<wire x1="27.94" y1="-12.7" x2="22.86" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="-12.7" x2="17.78" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="-12.7" x2="2.54" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="-10.16" x2="22.86" y2="-12.7" width="0.1524" layer="91"/>
-<junction x="22.86" y="-12.7"/>
+<wire x1="38.1" y1="-12.7" x2="33.02" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-12.7" x2="27.94" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-12.7" x2="17.78" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-10.16" x2="33.02" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="33.02" y="-12.7"/>
 <pinref part="5V" gate="-6" pin="S"/>
+<wire x1="38.1" y1="-10.16" x2="38.1" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="38.1" y="-12.7"/>
+<pinref part="5V" gate="-2" pin="S"/>
 <wire x1="27.94" y1="-10.16" x2="27.94" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="27.94" y="-12.7"/>
-<pinref part="5V" gate="-2" pin="S"/>
-<wire x1="17.78" y1="-10.16" x2="17.78" y2="-12.7" width="0.1524" layer="91"/>
-<junction x="17.78" y="-12.7"/>
 </segment>
 <segment>
 <pinref part="LANCEUR" gate="-4" pin="S"/>
@@ -2081,9 +2212,9 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <wire x1="71.12" y1="165.1" x2="71.12" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X7" gate="-5" pin="S"/>
 <pinref part="SUPPLY10" gate="+5V" pin="+5V"/>
-<wire x1="215.9" y1="33.02" x2="246.38" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="33.02" x2="246.38" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-2" pin="S"/>
 </segment>
 <segment>
 <pinref part="LIDAR" gate="-7" pin="S"/>
@@ -2097,9 +2228,8 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 </segment>
 <segment>
 <pinref part="SUPPLY17" gate="+5V" pin="+5V"/>
-<pinref part="ROUE" gate="-4" pin="S"/>
-<wire x1="236.22" y1="106.68" x2="223.52" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="106.68" x2="218.44" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="83.82" x2="223.52" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="ROUE" gate="-12" pin="S"/>
 </segment>
 </net>
 <net name="ROUE_MOTEUR_2_ENCODEUR_A" class="0">
@@ -2113,9 +2243,9 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <junction x="93.98" y="66.04"/>
 </segment>
 <segment>
-<pinref part="ROUE" gate="-5" pin="S"/>
-<wire x1="187.96" y1="96.52" x2="182.88" y2="96.52" width="0.1524" layer="91"/>
-<label x="144.78" y="96.52" size="1.778" layer="95"/>
+<label x="147.32" y="88.9" size="1.778" layer="95"/>
+<wire x1="193.04" y1="88.9" x2="185.42" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="ROUE" gate="-9" pin="S"/>
 </segment>
 </net>
 <net name="ROUE_MOTEUR_1_PWM_0" class="0">
@@ -2130,9 +2260,9 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <junction x="-27.94" y="93.98"/>
 </segment>
 <segment>
-<pinref part="ROUE" gate="-9" pin="S"/>
-<wire x1="187.96" y1="86.36" x2="182.88" y2="86.36" width="0.1524" layer="91"/>
-<label x="144.78" y="86.36" size="1.778" layer="95"/>
+<label x="147.32" y="99.06" size="1.778" layer="95"/>
+<wire x1="193.04" y1="99.06" x2="185.42" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="ROUE" gate="-5" pin="S"/>
 </segment>
 </net>
 <net name="ROUE_MOTEUR_2_ENCODEUR_B" class="0">
@@ -2147,9 +2277,9 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <junction x="93.98" y="55.88"/>
 </segment>
 <segment>
+<label x="147.32" y="93.98" size="1.778" layer="95"/>
+<wire x1="193.04" y1="93.98" x2="185.42" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="ROUE" gate="-7" pin="S"/>
-<wire x1="187.96" y1="91.44" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
-<label x="144.78" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ROUE_MOTEUR_1_ENCODEUR_A" class="0">
@@ -2164,9 +2294,9 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <junction x="-91.44" y="68.58"/>
 </segment>
 <segment>
-<pinref part="ROUE" gate="-1" pin="S"/>
-<wire x1="187.96" y1="106.68" x2="182.88" y2="106.68" width="0.1524" layer="91"/>
-<label x="144.78" y="106.68" size="1.778" layer="95"/>
+<label x="147.32" y="78.74" size="1.778" layer="95"/>
+<wire x1="193.04" y1="78.74" x2="185.42" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="ROUE" gate="-13" pin="S"/>
 </segment>
 </net>
 <net name="ROUE_MOTEUR_1_ENCODEUR_B" class="0">
@@ -2181,9 +2311,9 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <junction x="-91.44" y="78.74"/>
 </segment>
 <segment>
-<pinref part="ROUE" gate="-3" pin="S"/>
-<wire x1="187.96" y1="101.6" x2="182.88" y2="101.6" width="0.1524" layer="91"/>
-<label x="144.78" y="101.6" size="1.778" layer="95"/>
+<label x="147.32" y="83.82" size="1.778" layer="95"/>
+<wire x1="193.04" y1="83.82" x2="185.42" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="ROUE" gate="-11" pin="S"/>
 </segment>
 </net>
 <net name="ROUE_MOTEUR_2_PWM_1" class="0">
@@ -2198,9 +2328,9 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <junction x="-27.94" y="99.06"/>
 </segment>
 <segment>
-<pinref part="ROUE" gate="-11" pin="S"/>
-<wire x1="187.96" y1="81.28" x2="182.88" y2="81.28" width="0.1524" layer="91"/>
-<label x="144.78" y="81.28" size="1.778" layer="95"/>
+<label x="147.32" y="104.14" size="1.778" layer="95"/>
+<wire x1="193.04" y1="104.14" x2="185.42" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="ROUE" gate="-3" pin="S"/>
 </segment>
 </net>
 <net name="TRIEUR_PWM_0" class="0">
@@ -2249,9 +2379,9 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <junction x="-91.44" y="104.14"/>
 </segment>
 <segment>
-<pinref part="X7" gate="-4" pin="S"/>
-<wire x1="187.96" y1="38.1" x2="182.88" y2="38.1" width="0.1524" layer="91"/>
-<label x="162.56" y="38.1" size="1.778" layer="95"/>
+<label x="152.4" y="38.1" size="1.778" layer="95"/>
+<pinref part="X2" gate="-2" pin="S"/>
+<wire x1="177.8" y1="38.1" x2="172.72" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SUIVEUR_IDC_SDA" class="0">
@@ -2265,9 +2395,9 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <junction x="-91.44" y="109.22"/>
 </segment>
 <segment>
-<pinref part="X7" gate="-2" pin="S"/>
-<wire x1="187.96" y1="43.18" x2="182.88" y2="43.18" width="0.1524" layer="91"/>
-<label x="162.56" y="43.18" size="1.778" layer="95"/>
+<label x="152.4" y="43.18" size="1.778" layer="95"/>
+<pinref part="X2" gate="-1" pin="S"/>
+<wire x1="177.8" y1="43.18" x2="172.72" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LANC_PWM_2" class="0">
@@ -2324,9 +2454,9 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <junction x="30.48" y="30.48"/>
 </segment>
 <segment>
-<pinref part="X7" gate="-3" pin="S"/>
-<wire x1="215.9" y1="38.1" x2="218.44" y2="38.1" width="0.1524" layer="91"/>
-<label x="218.44" y="38.1" size="1.778" layer="95"/>
+<label x="226.06" y="38.1" size="1.778" layer="95"/>
+<wire x1="218.44" y1="38.1" x2="226.06" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="4B" class="0">
@@ -2363,7 +2493,7 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <wire x1="193.04" y1="162.56" x2="190.5" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="A_MODIF_POUR_DATA_MOTEUR_1.5V" class="0">
+<net name="DIODE" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="TRIEUR_DIODE" gate="G$1" pin="3"/>
@@ -2819,43 +2949,43 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <junction x="210.82" y="167.64"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="MYRIO_PORT_A" gate="-8" pin="S"/>
-<wire x1="-91.44" y1="43.18" x2="-99.06" y2="43.18" width="0.1524" layer="91"/>
-<junction x="-91.44" y="43.18"/>
-<wire x1="-83.82" y1="43.18" x2="-91.44" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-83.82" y1="35.56" x2="-83.82" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="J5" gate="G$2" pin="6"/>
-<wire x1="-68.58" y1="35.56" x2="-83.82" y2="35.56" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="MYRIO_PORT_A" gate="-12" pin="S"/>
-<wire x1="-91.44" y1="53.34" x2="-99.06" y2="53.34" width="0.1524" layer="91"/>
-<junction x="-91.44" y="53.34"/>
-<pinref part="J5" gate="G$2" pin="4"/>
-<wire x1="-68.58" y1="40.64" x2="-78.74" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-78.74" y1="40.64" x2="-78.74" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="-78.74" y1="53.34" x2="-91.44" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
+<approved hash="101,1,215.9,43.18,X7-1,S,,,,"/>
+<approved hash="101,1,215.9,22.86,X7-9,S,,,,"/>
+<approved hash="101,1,187.96,22.86,X7-10,S,,,,"/>
+<approved hash="101,1,193.04,109.22,ROUE-1,S,,,,"/>
+<approved hash="101,1,223.52,109.22,ROUE-2,S,,,,"/>
+<approved hash="101,1,223.52,99.06,ROUE-6,S,,,,"/>
+<approved hash="101,1,223.52,93.98,ROUE-8,S,,,,"/>
+<approved hash="101,1,223.52,78.74,ROUE-14,S,,,,"/>
+<approved hash="101,1,-88.9,170.18,LIDAR-1,S,,,,"/>
+<approved hash="101,1,-55.88,170.18,LIDAR-2,S,,,,"/>
+<approved hash="101,1,-55.88,165.1,LIDAR-4,S,,,,"/>
 <approved hash="113,1,46.0331,-12.7,X6,,,,,"/>
 <approved hash="113,1,-68.1888,98.8784,J2,,,,,"/>
 <approved hash="113,1,-53.7312,101.782,J3,,,,,"/>
 <approved hash="113,1,-53.7312,39.5516,J4,,,,,"/>
 <approved hash="113,1,-68.1888,36.6484,J5,,,,,"/>
-<approved hash="113,1,74.0512,96.3384,J6,,,,,"/>
-<approved hash="113,1,88.5088,99.2416,J7,,,,,"/>
-<approved hash="113,1,88.5088,37.0116,J8,,,,,"/>
-<approved hash="113,1,74.0512,34.1084,J9,,,,,"/>
-<approved hash="113,1,241.34,158.46,TRIEUR_DIODE,,,,,"/>
+<approved hash="113,1,56.2712,96.3384,J6,,,,,"/>
+<approved hash="113,1,70.7288,99.2416,J7,,,,,"/>
+<approved hash="113,1,70.7288,37.0116,J8,,,,,"/>
+<approved hash="113,1,56.2712,34.1084,J9,,,,,"/>
+<approved hash="113,1,223.56,158.46,TRIEUR_DIODE,,,,,"/>
 </errors>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+</compatibility>
 </eagle>
