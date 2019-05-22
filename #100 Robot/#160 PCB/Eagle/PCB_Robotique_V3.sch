@@ -2381,7 +2381,7 @@ robot par le dessous</text>
 <wire x1="182.88" y1="38.1" x2="177.8" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SUIVEUR_IDC_SDA" class="0">
+<net name="SUIVEUR_I2C_SDA" class="0">
 <segment>
 <pinref part="MYRIO_PORT_A" gate="-34" pin="S"/>
 <label x="-124.46" y="109.22" size="1.778" layer="95"/>
