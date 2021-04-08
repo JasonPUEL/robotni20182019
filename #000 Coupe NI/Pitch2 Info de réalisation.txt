@@ -1,0 +1,27 @@
+•	PITCH « FINAL REVIEW » par équipe (15’ de présentation en anglais) en amphi devant jury -  Objectif : validation finale, bilan et clôture du projet (contexte, objectifs, plan de validation, critères de performance/succès validés ? reste à finaliser éventuel, dossiers de transfert avec tous les livrables techniques et documentation projet fournie à vos responsables de projet…) 
+o	23/05/2019 de 8 h à 12 h et le 24/05/2019 de 8 h à 16 h : l’ordre de passage vous sera communiqué prochainement.
+o	24/05/2019, dans le hall et le co-working : exposition de tous les projets et posters (participation obligatoire de toutes les équipes projet) avec présence des CSI3.
+
+•	Instructions pour le poster : 
+Vous trouverez, dans le OneDrive dédié à la démarche projet pour vos projets techniques, la trame élaborée par Aurélie DEMEULEMEESTER afin de permettre une présentation homogène. Il faudra absolument se baser sur cette dernière. Aurélie est votre interlocutrice privilégiée pour la réalisation du poster.
+o	Faire valider le contenu par votre tuteur de projet. Il ne doit pas y avoir de faute d’orthographe.
+La version finale du poster sera à rendre dans le dossier One Drive (dossier RENDU des POSTERS) au plus tard pour le vendredi 17 mai au soir. Il n’y aura pas de possibilité de tirer un poster après.
+o	Le poster doit comprendre à minima : 
+- Un titre, les noms des membres de l’équipe, le nom du tuteur,…
+- Description/photos du projet (justification, objectifs du projet, architecture, réalisation, résultats,…)
+- Une photo des différents membres de l’équipe étudiante (et oui, c’est l’occasion de garder des souvenirs de vous ;-)
+o	L’affiche sera en français… 
+o	Le format doit être un A0 haute résolution en pdf sur fond blanc. Tous les posters seront imprimés en A2 pour vos pitchs mais les 10 meilleurs (retenus lors du jury) seront imprimés sur carton plume afin d’être exposés durant une année au sein de l’école (portes ouvertes, grands évènements...).
+ 
+Je vous rappelle que l’objectif du poster est de bien vendre votre projet donc faites quelque chose de parlant, agréable à regarder, donnant envie d’en savoir plus… 
+
+•	Instructions pour la revue finale : 
+15 mn de présentation en anglais intégrant avec 2 mn de démonstration max. et permettant à toute l’équipe de prendre la parole. 
+Entrainez-vous avant pour les bavards et pensez à solliciter les enseignants d’anglais et ainsi profiter de l’occasion pour vous améliorer…
+La présentation doit comprendre : 
+      Eléments de la Charte projet : contexte, justification, objectifs,…
+      Architecture statique
+      Architecture dynamique
+      Gestion de projet, cas d’usages, liste des exigences et plan de validation, pourcentage d’achèvement du projet
+      Livrables attendus et fournis 
+Je vous rappelle que le OneDrive dédié à la démarche projet attendue comprend des exemples de présentation Powerpoint de Pitch Final de l’an dernier à titre d’exemple… à toutes fins utiles…
